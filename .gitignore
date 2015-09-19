@@ -19,6 +19,7 @@ lib64/
 parts/
 sdist/
 var/
+res/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -55,3 +56,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# OS X
+.DS_Store
