@@ -6,7 +6,7 @@ import numpy as np
 import scipy.linalg as spla
 
 try:
-    import nimfa
+    from nimfa.methods import seeding
 except ImportError:
     print('Nimfa is library was not found. Certain '
           'initialization algorithms will not be available.')
@@ -60,9 +60,9 @@ def _initialize_nimfa(cs, R, typ='random_c'):
         The name of initialization algorithm implemented in Nimfa.
     """
     _log.info('[Nimfa - %s] Factor initialization' % typ)
-    init_type = {'random_c': nimfa.methods.seeding.random_c.Random_c(),
-                 'random_vcol': nimfa.methods.seeding.random_vcol.Random_vcol(),
-                 'nndsvd': nimfa.methods.seeding.nndsvd.Nndsvd()}
+    init_type = {'random_c': seeding.random_c.Random_c(),
+                 'random_vcol': seeding.random_vcol.Random_vcol(),
+                 'nndsvd': seeding.nndsvd.Nndsvd()}
     G = {'shape': (len(cs), len(cs))}
     for i, ci in enumerate(cs):
         tmp = [R[i, j] for j in xrange(R['shape'][0]) if (i, j) in R] + \
