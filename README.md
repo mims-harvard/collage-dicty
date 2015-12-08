@@ -5,8 +5,8 @@ Collage is a gene prioritization approach that relies on data fusion by
 collective matrix factorization. Its aim is to identify most promising
 candidate genes that may be associated with the phenotype of interest.
 
-This repository contains supplementary code and data for *Gene prioritization 
-by compressive data fusion and chaining* by Zitnik et al. 
+This repository contains supplementary code and data for *[Gene prioritization 
+by compressive data fusion and chaining](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004552)* by Zitnik et al. 
 
 
 About Collage
@@ -59,9 +59,9 @@ Citing
       author    = {{\v{Z}}itnik, Marinka and Nam, Edward A and Dinh, Christopher and
                     Kuspa, Adam and Shaulsky, Gad and Zupan, Bla{\v{z}}},
       journal   = {PLoS Computational Biology},
-      volume    = {},
-      number    = {},
-      pages     = {},
+      volume    = {11},
+      number    = {10},
+      pages     = {e1004552},
       year      = {2015},
       publisher = {PLOS}
     }
